@@ -24,7 +24,7 @@ async function mongoDbConnection() {
       console.log("Could not connected to database : " + err);
     };
 
-const routes = require("../routes/routes");
+const routes = require("./routes/routes");
 const app = express();
 app.use(
   bodyParser.urlencoded({
